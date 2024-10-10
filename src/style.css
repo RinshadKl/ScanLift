@@ -34,3 +34,9 @@
   pointer-events: auto;
   transition: opacity 0.5s 0.5s;
 }
+
+@media  (max-width:376px) {
+  .wrapper,.wrapper.active {
+    padding: 10px;
+  }
+}
