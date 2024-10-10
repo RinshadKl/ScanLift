@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScanLift
+        
+    </title>
+    <link rel="shortcut icon" href="src/scanner.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <script src="https://cdn.tailwindcss.com/"></script>
+</head>
+<body>
+    
+    <div class="bg-[#674188] h-[100vh] flex justify-center items-center ">
+        <div class="wrapper flex flex-col items-center bg-white p-5 rounded-xl">
+            <div class="head flex flex-col justify-center items-center leading-10">
+                <h1 class="text-2xl font-bold">QR Code Generator</h1>
+                <p>Paste a url or enter text to generate QR code</p> 
+            </div>
+            <div class="form flex flex-col w-full p-3">
+                <input type="text" id="inputBox" placeholder="Enter url or text" class="pr-16 py-3 pl-4 rounded-lg border-2 w-full">
+                <button id="generateBtn" class="w-full mt-4 px-16 py-3 rounded-lg bg-[#C8A1E0] text-1xl text-white hover:bg-[#c8a1e0c9] duration-700"><i class="uil uil-qrcode-scan text-[#fff]"></i> Generate QR code</button>
+            </div>
+            <div class="result flex flex-col border-2 m-5 rounded-xl">
+                <img src="" id="resultImage" alt="qr-code" class="p-6 qr-code h-64">
+            </div>
+        </div>
+    </div>
+
+    <script src="src/script.js"></script>
+</body>
+</html>

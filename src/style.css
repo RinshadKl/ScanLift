@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+:root {
+  --quicksand: "Quicksand", sans-serif;
+  --hard-blue: #6439ff;
+  --light-blue: #4f75ff;
+  --green-dark:#00CCDD;
+  --light-green: #7CF5FF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--quicksand);
+}
+
+.wrapper {
+  height: 250px;
+}
+
+.result {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.wrapper.active {
+  height: 540px;
+  transition: height 0.2s ease;
+}
+
+.wrapper.active .result {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.5s 0.5s;
+}
